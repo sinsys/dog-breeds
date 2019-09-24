@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="description" content="Dog Image Search">
+		<title>Search for Dogs</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>Let's Look at Dogs</h1>
+		<div class="error">Something has gone wrong. Please try again.</div>
+
+		<section class="search-wrapper">
+			<h2>Find Random Dog Images</h2>
+			<form id="dog-query">
+				<label for="dog-quantity">Number of Dog Images</label>
+				<input name="dog-quantity" type="number" class="dog-quantity" placeholder="Enter a number" value="3">
+				<input type="submit" class="dog-submit" value="Search Dog Pictures">
+			</form>
+		</section>
+
+		<section class="search-wrapper">
+			<h2>Search For Breed</h2>
+			<form id="breed-search">
+				<input type="text" class="breed-name" placeholder="Enter a breed name">
+				<input type="submit" class="breed-submit" value="Search Breed">
+			</form>
+		</section>
+
+		<section class="search-wrapper">
+			<h2>Or pick a breed from our list</h2>
+			<form id="breed-select">
+				<select class="breed-select-options">
+				  <option value="null">-Select a Breed-</option>
+				</select>
+				<input type="submit" class="breed-select-submit" value="Select Breed">
+			</form>
+		</section>
+
+		<h2>Results</h2>
+		<section class="dog-results">
+
+		</section>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

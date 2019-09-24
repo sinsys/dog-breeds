@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	color: #F00;
+}
+.error {
+	background: #EEE;
+	color: red;
+	display: none;
+}
+
+.dog-results {
+	display: flex;
+	flex-direction: row;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-width: 960px;
+}
+.dog-result {
+	flex-basis: 25%;
+	width: 25%;
+}
+.dog-result.single {
+	flex-basis: 100%;
+	width: 100%;
+}
+
+.search-wrapper {
+	width: 100%;
+	margin: 1rem;
+	padding: 1rem;
+}
