@@ -75,7 +75,11 @@ function formListener(){
 
 	$('#dog-query').submit(e => {
 		let dogCount = $('.dog-quantity').val();
-		getDogImages(dogCount);
+		if(dogCount > 50){
+			$errorHandlerDOM("You cannot select more than 50 images. Please select a smaller number.");
+		} else {
+			getDogImages(dogCount);
+		}
 	});
 
 	$('#breed-search').submit(e => {
